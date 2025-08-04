@@ -18,9 +18,10 @@ This project analyzes rental revenue patterns using the [PostgreSQL DVD Rental s
 ---
 
 ## Comparisons
- _____________________   Runtime |  Buffers | Notes
-| Before Optimization | ~ 250 ms |  Mixed   | Extra columns, no indices
-| After Optimization  | ~ 121 ms |  All hit | Trimmed columns, indexed joins
+| Scenario             | Runtime   | Buffers   | Notes                          |
+|----------------------|-----------|-----------|--------------------------------|
+| Before Optimization  | ~250 ms   | Mixed     | Extra columns, no indexes      |
+| After Optimization   | ~121 ms   | All hit   | Trimmed columns, indexed joins |
 
 ---
 
