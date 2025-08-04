@@ -17,10 +17,18 @@ This project analyzes rental revenue patterns using the [PostgreSQL DVD Rental s
 
 ---
 
+## Comparisons
+ _____________________   Runtime |  Buffers | Notes
+| Before Optimization | ~ 250 ms |  Mixed   | Extra columns, no indices
+| After Optimization  | ~ 121 ms |  All hit | Trimmed columns, indexed joins
+
+---
+
 ## Usage
 
 This project is ideal for:
 - Practicing multi-table joins, aggregations, and transformations
+- Utilizing functions, views, indexing, and I/O optimization through "explain analyze"
 - Exploring business logic through SQL
 - Understanding how film ratings and genres relate to rental revenue
 
